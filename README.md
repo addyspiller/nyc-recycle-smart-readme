@@ -6,7 +6,7 @@ A photo-based app that gives you instant NYC-specific disposal instructions for 
 
 ## Why I built it
 
-I learned through NYC's Trash Academy that 33% of NYC trash is recyclable but ends up in landfill anyway — not because people don't care, but because the rules are genuinely confusing. NYC recycling guidelines are hyper-specific and confusing. I wanted to see if pointing a camera at something could replace all that mental overhead.
+I learned through NYC's Trash Academy that 33% of NYC trash is recyclable but ends up in landfill anyway — not because people don't care, but because the rules are hyper-specific and genuinely confusing. I wanted to see if pointing a camera at something could replace all that mental overhead.
 
 It was also my first real experiment with Gemini Vision, and I wanted to build something that would actually tell me whether it worked.
 

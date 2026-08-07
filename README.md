@@ -1,35 +1,48 @@
 # NYC Recycle Smart
 
-A photo-based app that gives you instant NYC-specific disposal instructions for whatever you're holding.
+A photo-based tool for getting an immediate, NYC-specific answer about how to dispose of an item.
 
----
+## The problem
 
-## Why I built it
+NYC recycling rules can be surprisingly difficult to apply in the moment.
 
-I learned through NYC's Trash Academy that 33% of NYC trash is recyclable but ends up in landfill anyway — not because people don't care, but because the rules are hyper-specific and genuinely confusing. I wanted to see if pointing a camera at something could replace all that mental overhead.
+Knowing that something is recyclable isn't always enough. The answer can depend on the material, type of packaging, and local disposal rules, which often means stopping to search through guidance just to figure out what to do with the item in your hand.
 
-It was also my first real experiment with Gemini Vision, and I wanted to build something that would actually tell me whether it worked.
+I wanted to test a simple product hypothesis:
 
----
+**Could computer vision remove that lookup step entirely?**
 
-## What it does
+## Product approach
 
-Point your camera at any item — a container, a bottle, a piece of packaging — and get back plain-language disposal instructions specific to New York City. No lookup tables, no browsing guidelines, just a straight answer about what to do with the thing in your hand.
+I designed the interaction around reducing the decision to one action:
 
----
+**Take a photo. Get a clear answer.**
 
-## How it went
+That meant keeping the experience intentionally narrow:
 
-Built in 4 days, and it genuinely works, which still surprises me a little. It's also one of the first real things I shipped, and the code reflects that. I've thought about rebuilding it cleanly but haven't gotten there yet.
+- no browsing through recycling categories
+- no lookup tables
+- no need to identify the material yourself
+- instructions specific to New York City rather than generic recycling guidance
 
----
+The goal wasn't to build a comprehensive waste-management platform. It was to see whether one confusing moment could become significantly easier.
 
-## Stack
+## What I built
 
-`JavaScript` · `Gemini Vision API` · `Netlify`
+A user can photograph an item such as a container, bottle, or piece of packaging and receive plain-language guidance about how to dispose of it under NYC rules.
 
----
+I built the first version in four days as a rapid product experiment to test whether the interaction was useful and whether vision models were capable enough to support it.
+
+## What I learned
+
+The experiment showed that computer vision could make a rules-heavy civic process feel much more direct.
+
+It also reinforced something I use in client work: when the uncertainty is about whether an interaction will actually solve the problem, a small working product can answer that faster than a detailed specification.
 
 ## Status
 
-Private repo. Not accepting external traffic — but happy to talk through how it was built.
+Prototype complete. The application isn't currently open to public traffic.
+
+## Built with
+
+JavaScript · Gemini Vision API · Netlify
